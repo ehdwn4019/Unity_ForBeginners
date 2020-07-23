@@ -7,5 +7,6 @@ public class CheckCollision : MonoBehaviour
   void OnCollisionEnter(Collision obj)
     {
         Debug.Log("충돌 발생");
+        GetComponent<AudioSource>().Play();
     }
 }
